@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+ Author: Padmanabhan.P 
+ app.html - search repository in git and return data.
+-->
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Git Search App</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/jquery-ui.min.css">
+	
+		<script type="text/javascript" src="./js/jquery.min.js"></script>
+ 		<script type="text/javascript" src="./js/jquery-ui.min.js"></script>
+
+		<script type="text/javascript" src="./js/app.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$.App.init();
+			});
+		</script>
+   </head>
+   
+   <body style="overflow:hidden">
+	   <!--header-start-->
+	<div id="dialog" title="Repository Details">
+		<p id="dialogContent"></p>
+	</div>
+	   <div class="header_bg">
+		   <div class="wrap">
+			   <div>
+				   <div class="logo">
+					   <a href=""><img onclick="$.App.reset()" src="./images/logo.png"  alt=""></a>
+				   </div>
+				   <div class="nav">
+					   <ul>
+						   <li ><a onclick="$.App.reset()" href="">Git Repo Search</a></li>
+					   </ul>
+				   </div>
+				   <div class="spane">
+					   <ul>
+						   <li> <input type="search" autocomplete="off" class="da-link" id="keyword" name="keyword">	</li>
+						   <li> <a onclick="$.App.search()" href="">Search</a> </li>									
+					   </ul>
+				   </div>
+				   <div class="clear"> </div>
+			   </div>
+		   </div>
+	   </div>
+	   <!--header-end-->
+	   <!--srarch-start-->
+	   <div class="wrap" id="search">
+		   <div class="main">
+			   <div class="mainContainer1">
+				   <div class="mainContainer2">
+					   <div class="clear"> </div>
+
+					   <div id="data-container" class="container" style="display:none"   >
+						   <h2>Search result based on "<b id="keyValue"></b>"</h2>
+
+						   <div id="ctnr1" class="clear">
+							   <div id="search-header">
+								   <ul id="filters" class="filters" style="display:block;">
+									   <li><span class="search-header hash" >#</span></li>
+									   <li><span class="search-header repo">Repository</span></li>
+									   <li><span class="search-header owner">Owner</span></li>
+								   </ul>
+							   </div>
+							   <div id="ctnr" class="clear">
+
+							   <div id="search-result">
+							   </div>
+							   </div>
+						   </div>
+					   </div>
+
+					   <div id="logo-container" class="logo-image" style="display:block" >
+						   <img class="mainlogo" src="./images/githublogo.jpg"></img>
+					   </div>
+					   <div id="norec-cotainer" class="loader-image" style="display:none">
+							<img class="keepcentered" src="./images/no-record-found.png"></img>
+						</div>
+					   <div id="loader-container" class="loader-image" style="display:none">
+						   <img class="keepcentered" src="./images/ajax-loader.gif"></img>
+					   </div>
+				   </div>
+			   </div>
+		   </div>
+	   </div>
+	   <!--search-end-->
+	   <div class="footer-bottom">
+		   <div class="wrap footer">&copy; Padmanabhan 2014
+		   </div>
+	   </div>
+   </body>
+</html>

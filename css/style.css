@@ -1,0 +1,205 @@
+/* Author: Padmanabhan.P 
+ * style.css - search repository in git and return data.
+ * */
+html,body,div,span,h1,h2,h3,h4,h5,h6,p,nav ul,nav li,footer,header, nav{
+	margin:0;
+	padding:0;
+	border:0;
+	font-size:100%;
+	font:inherit;
+	vertical-align:baseline;
+}
+
+ol,ul{
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+a{
+	text-decoration:none;
+}
+
+.clear{	
+	clear:both;
+}
+
+img{
+	max-width:100%;
+}
+
+body {
+	font-family: sans-serif;
+	font-size: 100%;
+	background: #ffffff;
+}
+.header_bg{
+	background-color:#1BBC9B;
+}
+
+.wrap
+{
+	width:70%;
+	margin: 0 auto;
+}
+
+.logo{
+	float: left;
+	display: block;
+	padding: 6px;
+	width:50px;
+	height:50px;
+}
+
+.nav{
+	float: left;
+	margin-top: 0.82em;
+}
+
+.nav > ul > li > a {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	display: block;
+	font-size: 1.4em;
+	color: #444;
+	padding: 0.5em 0.5em;
+}
+.spane > ul > li > input {
+	font-family: sans-serif;
+	display: block;
+	color: #444;
+	padding: 0.5em 0.5em;
+	float:left;
+	margin-left:45px;
+	margin-top:13px;
+}
+
+.spane > ul > li > a {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	display: block;
+	color: white;
+	padding: 0.5em 0.5em;
+	float:left;
+	margin-left:13px;
+	margin-top:13px;
+	background-color:#0c5546;
+	font-size:18px;
+}
+.keepcentered {
+    position:    absolute;
+    left:        50%;        
+	top:         20%;
+    margin-left: -100px;    
+	margin-top:  -50px; 
+}
+
+.mainlogo {
+	padding-left:150px;
+	padding-top:25px;
+	opacity:0.2;
+}
+
+.da-link {
+	float: right;
+	background-color: #f2f2f2;
+	display: block;
+	size : 200
+	color: #000000;
+	font-size: 1em;
+	margin: 0 auto;
+	width: 30%;
+	height: 2%
+	text-align: center;
+	padding: 0.3em 0.3em;
+}
+
+.container h2{
+	color:#4D4D4D;
+	font-size: 2em;
+	padding-bottom: 0.5em;
+	text-align: center;
+}
+.container p{
+	color:#444444;
+	font-size: 1em;
+	padding-bottom: 1em;
+	text-align: center;
+}
+.mainContainer1 {
+	padding: 1em 0em;
+}
+.mainContainer2{
+	margin-top: 4% 0%;
+	height: 630px;
+}
+.container { 
+	position: relative; 
+}
+.filters {
+	margin: auto;
+	padding: 0;
+	list-style: none;
+	width: 70%;
+}
+.search-header {
+	float:left;
+	margin-left: 1px;
+	display: block;
+	text-decoration: none;
+	background:#1BBC9B;	
+	color: #fff;
+	font-weight: 600;
+	padding: 10px;	
+	text-transform:uppercase;
+}
+
+.search-value {
+	float:left;
+	margin-left: 1px;
+	display: block;
+	text-decoration: none;
+	cursor: pointer;
+	background:#cbf8ee;
+	color:#07332a;
+	font-weight: 600;
+	padding: 10px;
+	height:auto;
+	height:25px;
+}
+.evenColor{
+	background:#cbf8e1 !important;	 
+}
+
+.hash{
+	width:40px;
+}
+
+.repo{
+	width:370px;
+}
+.owner{
+	width:200px;
+}
+
+.footer-bottom {
+	padding: 25px 0;
+	background: #303441;
+}
+
+.footer{
+	color:white;
+	margin-top:-5px;
+}
+.ui-dialog {
+    background: #cbf8ee !important;
+}
+.ui-widget-header {
+    background: #1BBC9B !important;
+}
+#ctnr::-webkit-scrollbar { 
+    display: none; 
+}
+#ctnr{
+	height:550px; overflow:auto;
+}
